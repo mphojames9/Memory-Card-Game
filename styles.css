@@ -1,0 +1,224 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-image: url(img/6289317.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    background-size:cover;
+}
+
+.game {
+    margin: auto;
+    background: url(img/tom-barrett-hgGplX3PFBg-unsplash.jpg);
+    background-size:100%;
+    position: relative;
+
+}
+
+
+
+.count {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1px;
+}
+
+.move-left, .cards-count {
+    background-color: rgba(0, 0, 0, 0.37);
+    width: 50%;
+    height: 50px;
+    color: white;
+    text-align: center;
+    align-items: center;
+    border: 5px  rgb(59, 49, 49);
+    border-style: inset;
+    padding: 3px;
+    font-weight: bold;
+    text-shadow: 1px 2px 3px darkred;
+}
+
+.memory-game {
+    width: 540px;
+    height: 540px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    perspective: 1000px;
+    position: relative;
+}
+
+.Space {
+    position: absolute;
+
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    bottom: 0px;
+    right: 0;
+    
+}
+
+.stars {
+    position: absolute;
+    width: 50%;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    left: -18%;
+    top: 20%;
+}
+
+.stars img {
+    width: 30vh;
+    animation: star 10s linear infinite;
+} 
+
+
+.Space img {
+    width: 50vh;
+    animation: Space 50s linear infinite;
+} 
+/*Space shuttle animation*/
+@keyframes Space {
+    0% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+    70% {
+        opacity: 1;
+    }
+
+   100% {
+        transform: translateY(-90vh);
+        opacity: 0;
+    }
+
+}
+
+.Space img:nth-child(1){
+    animation-delay: 3s;
+}
+
+/*End of Space shuttle animation*/
+
+/*Star animation*/
+.star img {
+    width: 15vh;
+    animation: star 100s linear infinite;
+} 
+
+@keyframes star {
+    0% {
+        transform: translateX(0);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+    70% {
+        opacity: 1;
+    }
+
+   100% {
+        transform: translateX(-5px);
+        opacity: 0;
+    }
+
+}
+
+.star img:nth-child(1){
+    animation-delay: 3s;
+}
+
+/*End of star animation*/
+
+
+.screen,
+.comments {
+    width: calc(100%);
+    height: 50px;
+    margin: auto;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border: 7px solid rgb(41, 38, 38);
+    border-style: outset;
+    font-family: Gabriola;
+}
+
+.memory-card {
+    width: calc(25% - 10px);
+    height: calc(33.33% - 10px);
+    position: relative;
+    margin: 5px;
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform .5s;
+}
+
+.memory-card:active {
+    transform: scale(.97);
+    transition: transform .2s;
+}
+
+.memory-card.flip {
+    transform: rotateY(180deg);
+}
+
+.front-face,
+.back-face {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border: 7px solid rgb(58, 53, 53);
+    border-style: outset;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.front-face:hover{
+    border: 7px solid rgba(255, 0, 0, 0.329);
+    border-radius: 10px;
+    border-style: outset;
+}
+
+.back-face:hover{
+    border: 7px solid rgba(3, 252, 3, 0.322);
+    border-radius: 10px;
+    border-style: outset;
+}
+
+.front-face {
+    transform: rotateY(180deg);
+}
+
+.green-glow {
+    background-color: rgba(0, 255, 0, 0.308);
+    border-style:outset;
+
+}
+
+.red-glow {
+    background-color: rgba(255, 0, 0, 0.397);
+    border-style: outset;
+}
+.cursor {
+    cursor: pointer;
+}
+
+
