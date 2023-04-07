@@ -9,4 +9,4 @@ In this game ,
 there are 12 cards where every two cards have the same images,but each card is placed randomly every time you reset the game,
 and you have to find them with 11 moves. A very interesting game to play.
 
-live page: https://mphojames9.github.io/Memory-card-game/
+live page: https://mphojames9.github.io/memory-card-game/
