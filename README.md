@@ -1,4 +1,4 @@
-# Memory-card-game
+Hi# Memory-card-game
 
 ## Build with HTML, CSS and Javascript.
 Memory card is a simple matching cards game in which all the cards are flipped backside on a surface,
@@ -7,6 +7,4 @@ with limited moves.
 
 In this game ,
 there are 12 cards where every two cards have the same images,but each card is placed randomly every time you reset the game,
-and you have to find them with 11 moves. A very interesting game to play.
-
-live page: https://mphojames9.github.io/memory-card-game/
+and you have to find them with 11 moves. A very interesting game to play. 
